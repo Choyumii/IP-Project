@@ -50,18 +50,8 @@
                         <div class="content">
 
                             <div class="btn-group">
-                                <button class="btn" onclick="myFunction()">Login</button>
-                                <button class="btn" onclick="myFunction2()">Sign Up</button>
-                                <!-- Trigger/Open The Modal -->
-                                <button id="myBtn">Open Modal</button>
+                                <a href="index.html" class="btn"><h2>Login</h2></a>
 
-                                <!-- The Modal -->
-                                <div id="myModal" class="modal">
-
-                                    <!-- Modal content -->
-                                    <div class="modal-content">
-                                        <span class="close">&times;</span>
-                                        <p color="black">Some text in the Modal..</p>
                                     </div>
 
                                 </div>
@@ -74,47 +64,6 @@
     </section>
 </body>
 
-<script>
-    function myFunction() {
-        confirm("You are about to enter the Login Page.")
-    }
-    function myFunction2() {
-        confirm("You are about to enter the Sign Up Page.")
-    }
-
-    // Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-// Get the video
-var video = document.getElementById("myVideo");
-
-// Get the button
-var btn = document.getElementById("myBtn");
-
-</script>
 <style>
     .btn-group button {
         background-color: #859b93;
@@ -142,52 +91,4 @@ var btn = document.getElementById("myBtn");
         margin-bottom: 3px;
     }
 
-    /* The Modal (background) */
-    .modal {
-        display: none;
-        /* Hidden by default */
-        position: fixed;
-        /* Stay in place */
-        z-index: 1;
-        /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%;
-        /* Full width */
-        height: 100%;
-        /* Full height */
-        overflow: auto;
-        /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0);
-        /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.4);
-        /* Black w/ opacity */
-    }
-
-    /* Modal Content/Box */
-    .modal-content {
-        background-color: #000000;
-        margin: 15% auto;
-        /* 15% from the top and centered */
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        height: 50%;
-        /* Could be more or less, depending on screen size */
-    }
-
-    /* The Close Button */
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
 </style>
