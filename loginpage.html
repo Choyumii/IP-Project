@@ -1,92 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overwatch</title>
 
-    <link rel="shortcut icon" href="images/amongus.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-    <link
-        rel="stylesheet"
-        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    >
     <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- custom css file link -->
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loginstyle.css">
+
 </head>
 
-   <!-- header section start -->
-   <header>
-    <a href="index.html" class="logo"><img src="images/Overwatch_circle_logo.svg" alt="">Overwatch.</a>
-    </nav>
-    <div class="icons">
-        <i class="fas fa-bars" id="menu-bars"></i>
-        <i class="fas fa-search" id="search-icon" onclick="myFunction()"></i>
-        <input type="text" id="myDIV" placeholder="Search.." >
-        
-    </div>
-</header>
+<body>
 
-<!-- home section start -->
-
-<section class="home" id="home">
-
-    <div class="swiper home-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-                <div class="box " style="background: url(images/overwatch.png) no-repeat;">
-                    <div class="content">
-                        <img src="images/overwatchlogo.png" alt="">Overwatch.</a>
-                        <input type="text" id="myDIV" placeholder="Username.." >
-                        <input type="text" id="myDIV" placeholder="Password.." >
-                        <a href="solonewbie.html" class="btn">Enter</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="box" style="background: url(images/overwatch.png) no-repeat;">
-                    <div class="content">
-                        <h3>The Greatest Estate Developer</h3>
-                         <p></p>
-                        <a href="thegreatestestatedeveloper.html" class="btn">View More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="box " style="background: url(images/overwatch.png) no-repeat;">
-                    <div class="content">
-                        <h3>Her Summon</h3>
-                         <p></p>
-                        <a href="hersummon.html" class="btn">View More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="box " style="background: url(images/overwatch.png) no-repeat;">
-                    <div class="content">
-                        <h3>Shotgun Boy</h3>
-                        <p></p>
-                        <a href="shotgunboy.html" class="btn">View More</a>
-                    </div>
-                </div>
-            </div>
-
+    <!-- header section start --><!-- The video -->
+    <header>
+        <a href="#" class="logo"><img src="images/Overwatch_circle_logo.svg"></i>Overwatch</a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="">Gallery</a>
+            <a href="leaderboards.html">Leaderboards</a>
+            <a href="">Tutorials</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
         </div>
+    </header>
+        <div class="box5">
 
-    </div>   
+         <div class="container5">
+     
+             <div class="top">
+                 <span>Have an account?</span>
+                 <headerlogin>Login</headerlogin>
+             </div>
+     
+             <div class="input-field">
+                 <input type="text" class="input" placeholder="Username" id="">
+                 <i class='bx bx-user' ></i>
+             </div>
+     
+             <div class="input-field">
+                 <input type="Password" class="input" placeholder="Password" id="">
+                 <i class='bx bx-lock-alt'></i>
+             </div>
+     
+             <div class="input-field">
+                 <input type="submit" class="submit" value="Login" id="">
+             </div>
+     
+             <div class="two-col">
+                 <div class="one">
+                    <input type="checkbox" name="" id="check">
+                    <label for="check"> Remember Me</label>
+                 </div>
+                 <div class="two">
+                     <label><a href="#">Forgot password?</a></label>
+                 </div>
+             </div>
+         </div>
 
-
-
-
+    </body>
+    </html>
 
 
 

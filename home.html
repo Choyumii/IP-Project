@@ -1,159 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overwatch</title>
 
-    <link rel="shortcut icon" href="images/amongus.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-    <link
-        rel="stylesheet"
-        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    >
     <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- custom css file link -->
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
-   <!-- header section start -->
-   <header>
-    <a href="index.html" class="logo"><img src="images/Overwatch_circle_logo.svg" alt="">Overwatch.</a>
-    </nav>
-    <div class="icons">
-        <i class="fas fa-bars" id="menu-bars"></i>
-        <i class="fas fa-search" id="search-icon" onclick="myFunction()"></i>
-        <input type="text" id="myDIV" placeholder="Search.." >
-        
-    </div>
-</header>
+<body>
 
-<!-- home section start -->
-
-<section class="home" id="home">
-
-    <div class="swiper home-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-                <div class="box " style="background: url(images/overwatch.png) no-repeat;">
-                    <div class="content">
-                        <img src="images/overwatchlogo.png" alt="">Overwatch.</a>
-                        <input type="text" id="myDIV" placeholder="Username.." >
-                        <input type="text" id="myDIV" placeholder="Password.." >
-                        <a href="solonewbie.html" class="btn">Enter</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="box" style="background: url(images/overwatch.png) no-repeat;">
-                    <div class="content">
-                        <h3>The Greatest Estate Developer</h3>
-                         <p></p>
-                        <a href="thegreatestestatedeveloper.html" class="btn">View More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="box " style="background: url(images/overwatch.png) no-repeat;">
-                    <div class="content">
-                        <h3>Her Summon</h3>
-                         <p></p>
-                        <a href="hersummon.html" class="btn">View More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="box " style="background: url(images/overwatch.png) no-repeat;">
-                    <div class="content">
-                        <h3>Shotgun Boy</h3>
-                        <p></p>
-                        <a href="shotgunboy.html" class="btn">View More</a>
-                    </div>
-                </div>
-            </div>
-
+    <!-- header section start --><!-- The video -->
+    <header>
+        <a href="#" class="logo"><img src="images/Overwatch_circle_logo.svg"></i>Overwatch</a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="">Gallery</a>
+            <a href="leaderboards.html">Leaderboards</a>
+            <a href="">Tutorials</a>
+            <a href="loginpage.html">testlogin</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
         </div>
-
-    </div>   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <!-- custome js file link -->
-<script src="main.js"></script>
-<script src="button.js"></script>
+    </header>
+
+
+    <section class="home" id="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    
+                    <div class="box ">
+                        <video autoplay muted loop id="myVideo">
+                            <source src="S2Trailer.mp4" type="video/mp4">
+                          </video>
+                        <div class="content">
+
+                            <div class="btn-group">
+                                <button class="btn" onclick="myFunction()">Login</button>
+                                <button class="btn" onclick="myFunction2()">Sign Up</button>
+                                <!-- Trigger/Open The Modal -->
+                                <button id="myBtn">Open Modal</button>
+
+                                <!-- The Modal -->
+                                <div id="myModal" class="modal">
+
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <p color="black">Some text in the Modal..</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
-</html>
+
+<script>
+    function myFunction() {
+        confirm("You are about to enter the Login Page.")
+    }
+    function myFunction2() {
+        confirm("You are about to enter the Sign Up Page.")
+    }
+
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+</script>
+<style>
+    .btn-group button {
+        background-color: #859b93;
+        /* Green background */
+        border: 1px solid rgb(0, 0, 0);
+        /* Green border */
+        color: white;
+        /* White text */
+        padding: 10px 24px;
+        /* Some padding */
+        cursor: pointer;
+        /* Pointer/hand icon */
+        width: 100%;
+        /* Set a width if needed */
+        display: block;
+        /* Make the buttons appear below each other */
+        text-align: left;
+    }
+
+    .btn-group button:hover {
+        background-color: #3e8e41;
+    }
+
+    .btn-spacing {
+        margin-bottom: 3px;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #000000;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        height: 50%;
+        /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
