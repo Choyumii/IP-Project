@@ -12,10 +12,15 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
+    background-color: #181818;
 }
 .img-gallery img{
     width: 100%;
     cursor: pointer
+}
+.img-gallery img{
+    background-color: grey;
+    border-radius: 25px;
 }
 
 .img-gallery img:hover{
