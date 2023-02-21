@@ -1,0 +1,109 @@
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #000;
+  letter-spacing: 0.5px;
+  background-color: #888;
+  text-align: left;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Georgia;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  color: #222222;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+h2 {
+  background-color: #999999;
+  color: var(-#222222);
+  font-style: italic;
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  padding: 3px;
+  font-size: 13px;
+}
+
+.header {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 10px 10px 10px 30px;
+}
+
+main {
+  position: relative;
+  width: 975px;
+  margin: 75px auto 150px auto;
+}
+
+.container {
+  width: 975px;
+  height: auto;
+  background-color: #fff;
+}
+
+.inner-container {
+  width: 600px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15px;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.sidebar {
+  display: inline-block;
+  width: 280px;
+  background-color: #fff;
+  border: 1px solid #888888;
+  vertical-align: top;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.navigation {
+  height: auto;
+  width: 300px;
+  border: 1px solid #888888;
+  color: #000000;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.skill-box {
+  width: 570px;
+  height: 200px;
+  padding: 15px;
+  background-color: #000000;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.skill-image {
+  width: 150px;
+  height: 150px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.skill-text {
+  width: 300px;
+  margin-left: 200px;
+  margin-top: -150px;
+  color: #ffffff;
+}
