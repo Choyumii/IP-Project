@@ -391,7 +391,9 @@ header .icons #myDIV {
 
 
 
-
+.comments {
+    width: 400px;
+}
 
 
 
@@ -454,7 +456,6 @@ header .icons #myDIV {
         width: 860px;
     }
 
-
     #contentBanners {
         width: 537px;
         flex-wrap: wrap;
@@ -505,6 +506,13 @@ header .icons #myDIV {
         display: none;
     }
 
+    .sidebar {
+        display: none;
+    }
+    .inner-container {
+        width: 780px;
+        flex-wrap: wrap;
+    }
 
     .slider {
         width: 700px;
@@ -553,7 +561,12 @@ header .icons #myDIV {
     .Banners-container {
         width: 540px;
     }
+    .inner-container {
+        width: 620px;
+        flex-wrap: wrap;
+    }
 }
+
 
 @media only screen and (max-width:550px) {
     .slider {
@@ -578,6 +591,7 @@ header .icons #myDIV {
     .Banners-container img {
         width: 182px;
     }
+    
 }
 
 @media only screen and (max-width:400px) {

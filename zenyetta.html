@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Overwatch</title>
+    <link rel="shortcut icon" href="images/overwatchlogovector.png">
 
     <link
       rel="stylesheet"
@@ -20,21 +21,22 @@
     <!-- custom css file link -->
     <link rel="stylesheet" href="herostyle.css" />
     <link rel="stylesheet" href="style.css" />
+    
   </head>
 
   <body>
-    <header>  <!-- header -->
-        <a href="#" class="logo"><img src="images/Overwatch_circle_logo.svg"></i>Zenyetta</a>
-        <nav class="navbar">
-            <a href="home2.html">Home</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="leaderboards.html">Leaderboards</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <div class="icons">
-            <i class="fas fa-bars" id="menu-bars"></i>
-        </div>
-    </header>
+    <header>
+      <a href="#" class="logo"><img src="images/Overwatch_circle_logo.svg"></i>OverBrowse</a>
+      <nav class="navbar">
+          <a href="home2.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+      </nav>
+      <div class="icons">
+          <i class="fas fa-bars" id="menu-bars"></i>
+      </div>
+  </header>
+  
 <!-- header -->
 
     <main>
@@ -282,10 +284,10 @@
                         </div>
                       </div>
                       <div class="matches-played">
-                        Matches Played: 182
+                        Matches Played: 193
                       </div>
                       <div class="matches-played">
-                        Winrate: 78%
+                        Winrate: 85%
                       </div>
                     </div>
                   </div>
@@ -322,10 +324,10 @@
                         </div>
                       </div>
                       <div class="matches-played">
-                        Matches Played: 182
+                        Matches Played: 192
                       </div>
                       <div class="matches-played">
-                        Winrate: 78%
+                        Winrate: 68%
                       </div>
                     </div>
                   </div>
@@ -342,10 +344,10 @@
                         </div>
                       </div>
                       <div class="matches-played">
-                        Matches Played: 182
+                        Matches Played: 282
                       </div>
                       <div class="matches-played">
-                        Winrate: 78%
+                        Winrate: 61%
                       </div>
                     </div>
                   </div>
@@ -362,10 +364,10 @@
                         </div>
                       </div>
                       <div class="matches-played">
-                        Matches Played: 182
+                        Matches Played: 82
                       </div>
                       <div class="matches-played">
-                        Winrate: 78%
+                        Winrate: 92%
                       </div>
                     </div>
                   </div>
@@ -382,16 +384,15 @@
                         </div>
                       </div>
                       <div class="matches-played">
-                        Matches Played: 182
+                        Matches Played: 103
                       </div>
                       <div class="matches-played">
-                        Winrate: 78%
+                        Winrate: 72%
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="lboard_item Mercy"></div>
-                <div class="lboard_item Doomfist"></div>
+
               </div>
             </div>
             
@@ -417,9 +418,37 @@
           </form>
         </div>
         <div class="sidebar">
-          <img src="images/710137.png">
+          <h1>Zenyetta</h1>
+          <model-viewer
+          src="scene.glb"
+          alt="A 3D model of a car"
+          shadow-intensity="1"
+          camera-controls
+          auto-rotate
+          ar
+        >
+        </model-viewer>
+        <h2>Skin : Base</h2>
+        <a href="zenskins.html">View Skins?</a><br />
         </div>
       </div>
     </main>
-  </body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+      <!--  REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+      <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+      <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+    <script src="main.js"></script>
+<script src="button.js"></script>
+</body>
 </html>
