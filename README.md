@@ -170,3 +170,6 @@ https://owarinoseraph.fandom.com/wiki/Shinoa_H%C4%ABragi
 https://overwatch.fandom.com/wiki/Zenyatta
 https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fulkhror%2Fstatus%2F750066202496667648&psig=AOvVaw0BZmKBNmcUAaGQCRrWsBqc&ust=1676727330364000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPDDm5nWnP0CFQAAAAAdAAAAABAD
 https://www.peakpx.com/en/hd-wallpaper-desktop-anpui
+
+Inspiration
+https://overwatch.fandom.com/wiki/Zenyatta
