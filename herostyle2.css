@@ -1,7 +1,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  font-size: 13px;
+  font-size: 25px;
   color: black;
   letter-spacing: 0.5px;
   background-color: #888;
@@ -73,15 +73,7 @@ main {
   margin-top: 70px;
 }
 
-.sidebar img{
-  display: inline-block;
-  width: 280px;
-  background-color: #fff;
-  border: 1px solid #222222;
-  vertical-align: top;
-  text-align: center;
-  margin-top: 70px;
-}
+
 
 .navigation {
   height: auto;
@@ -124,8 +116,8 @@ main {
 }
 
 .lboard_section {
-  width: 500px;
-  height: 650px;
+  width: 800px;
+  height: 1500px;
   margin: 100px auto 0;
   border-radius: 50px;
   padding: 25px 40px;
@@ -154,9 +146,9 @@ main {
   left: 40px;
   background: gray;
   width: 100%;
-  height: 99%;
-  border-radius: 10px;
-  margin-bottom: 50px;
+  height: 97%;
+  border-radius: 20px;
+  margin-bottom: 500px;
 }
 
 .lboard_wrap .lboard_item {
@@ -169,19 +161,8 @@ main {
   padding: 15px 0;
   background-color: white;
   border-radius: 10px;
-  border-bottom: 5px  solid gray;
+  border-bottom: 10px  solid gray;
 }
-
-
-.lboard_wrap .lbord_mem .img {
-  width: 50px;
-}
-
-.lboard_wrap .lbord_mem .img img {
-  display: block;
-  width: 100%;
-}
-
 .lboard_wrap .lboard_item .lboard_mem img{
   margin-left: 10px;
 }
@@ -190,3 +171,4 @@ main {
   justify-content: end;
   margin-left: 50px;
 }
+
